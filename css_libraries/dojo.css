@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 70px;
+    height: 25px;
+    background-color: #17a2b8;
+    box-shadow: 2px 2px 1px black;
+    color: white;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    width: 100px;
+    gap: 1rem;
+    flex: 2;
+    flex-direction: column;
+}
+.row-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    width: 100px;
+    gap: 1rem;
+    flex: 1;
+    flex-direction: column;
+}
+
+.col {
+    background-color:#5f9fa0;
+    width: 100px;
+    height: 100px;
+}
+
+.col-2 {
+    background-color:#5f9fa0;
+
+}
+
+.nav {
+    height: 50px;
+    background-color: #333333;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-card-content {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.user-card-nav {
+    background-color: #17a2b8;
+    height: 100px;
+    width: 100%;
+}
