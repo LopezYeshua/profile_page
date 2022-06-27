@@ -44,8 +44,8 @@ a {
     left: 5%;
 }
 
-.user-card-container {
-    width: 50%;
+.user-card-content {
+    width: 95%;
     position: relative;
     flex-direction: column;
     left: 5%;
@@ -56,8 +56,9 @@ a {
     gap: 0.5rem;
 }
 
-h1 .user-card-h1 {
+.user-card-h1 {
     font-weight: normal;
+    color: black !important;
     flex:1;
 }
 
@@ -77,3 +78,28 @@ h1 .user-card-h1 {
     flex: 1;
 }
 
+h3 {
+    font-weight:normal;
+}
+
+.skills {
+    list-style-type: none;
+    display:flex;
+    gap: 0.3rem;
+}
+
+#gear {
+    height: 18px;
+    margin-right: 5px;
+}
+
+.editProfile {
+    display: flex;
+    align-items: center;
+    flex:1;
+}
+
+.editProfile a {
+    color: blue;
+    text-decoration-line: underline;
+}
