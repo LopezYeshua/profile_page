@@ -4,7 +4,7 @@
 }
 
 .nav-container {
-    width: 600px;
+    width: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,10 +15,10 @@ h1 {
     flex: 1;
 }
 
-ul {
+.nav-ul {
     display: flex;
     list-style-type: none;
-    flex: 3;
+    flex: 4;
     gap: .5rem;
 }
 
@@ -28,13 +28,15 @@ a {
 }
 
 .content-container {
-    width: 600px;
+    width: 700px;
     min-height: 600px;
+    padding: 3% 0%;
     margin: 0 auto;
     display:flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: row;
+    gap: 1rem;
 }
 
 #profilePic {
@@ -102,4 +104,73 @@ h3 {
 .editProfile a {
     color: blue;
     text-decoration-line: underline;
+}
+
+.requests {
+    background-color:transparent;
+    width: 100%;
+    min-height: 150px;
+}
+
+.num-request-container {
+    background-color: #cccccc;
+    width: 25px;
+    height: 25px;
+    margin: 0% 5%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.request-nav {
+    height: 50px;
+    background-color: #333333;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.h3-request-title {
+    color: #cccccc;
+}
+
+.request-container {
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+.request-ul {
+    width: 100%;
+}
+
+#name {
+    flex: 3;
+}
+
+.request-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 1rem;
+}
+
+
+#user-pic {
+    border-radius: 50%;
+    width: 50px;
+    flex: 1;
+}
+
+#accept-request {
+    border-radius: 50%;
+    width: 40px;
+    flex: .5;
+}
+
+#deny-request {
+    border-radius: 50%;
+    width: 40px;
+    flex: .5;
 }
