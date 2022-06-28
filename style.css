@@ -1,32 +1,23 @@
+/* Reset */
 * {
     font-family: 'Balsamiq Sans', cursive;
     font-weight: normal;
 }
 
-.nav-container {
-    width: 700px;
+/* !! General styles !! */
+
+/* wraps a round container around any text.*/
+.count-container {
+    background-color: #cccccc;
+    padding: .3em .6em;
+    margin: 0% 5%;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-h1 {
-    color: white;
-    flex: 1;
-}
-
-.nav-ul {
-    display: flex;
-    list-style-type: none;
-    flex: 4;
-    gap: .5rem;
-}
-
-a {
-    color: white;
-    text-decoration-line: none;
-}
-
+/* Controls body below navbar */
 .content-container {
     width: 700px;
     min-height: 600px;
@@ -37,6 +28,42 @@ a {
     justify-content: center;
     flex-direction: row;
     gap: 1rem;
+}
+/* !! The End !! */
+
+/* !! Start of navbar !! */
+.nav-container {
+    width: 75%;
+}
+
+.nav-container h1 {
+    color: white;
+    flex: 1;
+}
+
+.nav a {
+    color: white;
+    text-decoration-line: none;
+}
+
+/* Controls display for: Home my Profile Find Connections */
+.nav-ul {
+    display: flex;
+    list-style-type: none;
+    flex: 4;
+    gap: .5rem;
+}
+/* !! The End !! */
+
+
+
+
+/* !! Start of user card container !! */
+
+.user-card-nav {
+    background-color: #17a2b8;
+    height: 100px;
+    width: 100%;
 }
 
 #profilePic {
@@ -58,7 +85,7 @@ a {
     gap: 0.5rem;
 }
 
-.user-card-h1 {
+.user-card-name {
     font-weight: normal;
     color: black !important;
     flex:1;
@@ -80,8 +107,9 @@ a {
     flex: 1;
 }
 
-h3 {
+.user-card-location h3 {
     font-weight:normal;
+    color: black !important;
 }
 
 .skills {
@@ -105,23 +133,10 @@ h3 {
     color: blue;
     text-decoration-line: underline;
 }
+/* !! The End !! */
 
-.requests {
-    background-color:transparent;
-    width: 100%;
-    min-height: 150px;
-}
 
-.num-request-container {
-    background-color: #cccccc;
-    width: 25px;
-    height: 25px;
-    margin: 0% 5%;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* Start of request container */
 
 .request-nav {
     height: 50px;
@@ -135,42 +150,83 @@ h3 {
     color: #cccccc;
 }
 
-.request-container {
-    padding: 10px;
-    border: 2px solid gray;
-}
-
 .request-ul {
     width: 100%;
 }
 
-#name {
-    flex: 3;
+.name {
+    flex: 4;
 }
 
 .request-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 10px;
     gap: 1rem;
 }
 
-
-#user-pic {
+.user-pic {
     border-radius: 50%;
     width: 50px;
     flex: 1;
 }
 
-#accept-request {
+.accept-request {
     border-radius: 50%;
     width: 40px;
     flex: .5;
 }
 
-#deny-request {
+.deny-request {
     border-radius: 50%;
     width: 40px;
     flex: .5;
 }
+/* !! The End !! */
+
+
+/* !! Start of education container !! */
+
+.education-nav {
+    height: 40px;
+    background-color: #333333;
+    display:flex;
+    padding-left: 3%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container h3 {
+    color: #cccccc;
+}
+
+#education-information {
+    padding: 3%;
+}
+
+#education-information h3 {
+    color: gray;
+}
+/* !! The End !! */
+
+
+/* !! Start of connections container !! */
+
+.connections-nav {
+    height: 50px;
+    background-color: #333333;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.connections-container h3 {
+    color: #cccccc;
+}
+
+.view-more-container {
+    background-color:transparent;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 15px 10px;
+    justify-content: flex-start !important;
+}
+/* !! The End !! */

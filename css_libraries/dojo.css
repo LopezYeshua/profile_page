@@ -4,40 +4,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: normal;
 }
 
-.container {
-    width: 1200px;
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* splits the content blocks into columns */
+.content-container {
+    width: 75%;
+    min-height: 600px;
+    padding: 3% 0%;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.full-container {
+    width: 75%;
     margin: 0 auto;
 }
 
+.container {
+    background-color:transparent;
+    width: 100%;
+    border: 1px solid gray;
+}
+
 .btn {
-    width: 70px;
-    height: 25px;
+    padding: .5em 1em;
     background-color: #17a2b8;
     box-shadow: 2px 2px 1px black;
     color: white;
 }
 
 .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 100px;
-    width: 100px;
+    min-width: 100px;
+    flex: 2;
     gap: 1rem;
-    flex: 1.5;
     flex-direction: column;
 }
 
 .row-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 100px;
     width: 100px;
-    gap: 1rem;
     flex: 1;
+    gap: 1rem;
     flex-direction: column;
 }
 
@@ -55,19 +73,5 @@
 .nav {
     height: 50px;
     background-color: black;
-    display:flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.user-card-container {
-    width: 100%;
-    margin: 0 auto;
-    border: 1px solid black;
-}
-
-.user-card-nav {
-    background-color: #17a2b8;
-    height: 100px;
-    width: 100%;
-}

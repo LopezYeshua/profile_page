@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css_libraries/dojo.css">
 </head>
+
 <body>
-    <div class="nav">
-        <div class="nav-container">
+    <div class="nav flex">
+        <div class="nav-container flex">
             <h1>Profile</h1>
             <ul class="nav-ul">
                 <li><a href="#">Home</a></li>
@@ -20,16 +22,16 @@
             <button class="btn">Sign Out</button>
         </div>
     </div>
-    <div class="content-container">
-        <div class="row">
-            <div class="user-card-container">
+    <div class="content-container flex">
+        <div class="row flex">
+            <div class="container">
                 <div class="user-card-nav">
-                    <img  id="profilePic" src="./images/icons/user-circle.png" alt="User Photo">
+                    <img id="profilePic" src="./images/icons/user-circle.png" alt="User Photo">
                 </div>
                 <div class="user-card-content">
-                    <h1 class="user-card-h1">Jane Doe</h1>
+                    <h1 class="user-card-name">Jane Doe</h1>
                     <div class="user-card-location">
-                        <img  id="mapMarker" src="./images/icons/map-marker.png" alt="Map Marker">
+                        <img id="mapMarker" src="./images/icons/map-marker.png" alt="Map Marker">
                         <h3>Seattle</h3>
                     </div>
                     <div class="user-card-description">
@@ -48,36 +50,76 @@
                     </div>
                 </div>
             </div>
-            <div class="col">1/4</div>
+            <div class="container">
+                <div class="education-nav">
+                    <h3>Education</h3>
+                </div>
+                <div id="education-information" class="container">
+                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                    <h3>Dec 2019 - Mar 2020</h3>
+                    <p>Tripple black belt in Python, MERN, and C#</p>
+                </div>
+            </div>
         </div>
-        <div class="row-2">
-            <div class="requests">
+        <div class="row-2 flex">
+            <div class="container">
                 <div class="request-nav">
-                    <div class="num-request-container">
-                        <p id="num-requests">2</p>
+                    <div class="count-container">
+                        <p>2</p>
                     </div>
                     <h3 class="h3-request-title">Connection Requests</h3>
                 </div>
-                <div class="request-container">
+                <div class="container">
                     <ul class="request-ul">
-                        <li class="request-list">
-                            <img id="user-pic" src="./images/todd-s.jpg" alt="Todd">
-                            <p id="name" >Todd E.</p>
-                            <img id="accept-request" src="./images/icons/accept-circle.png" alt="checkmark">
-                            <img id="deny-request"src="./images/icons/close-circle.png" alt="x-mark">
+                        <li class="request-list flex">
+                            <img class="user-pic" src="./images/todd-s.jpg" alt="Todd">
+                            <p class="name">Todd E.</p>
+                            <img class="accept-request" src="./images/icons/accept-circle.png" alt="checkmark">
+                            <img class="deny-request" src="./images/icons/close-circle.png" alt="x-mark">
                         </li>
-                        <li class="request-list">
-                            <img id="user-pic" src="./images/phil-s.jpg" alt="Phil">
-                            <p id="name" >Phil K.</p>
-                            <img id="accept-request" src="./images/icons/accept-circle.png" alt="checkmark">
-                            <img id="deny-request"src="./images/icons/close-circle.png" alt="x-mark">
+                        <li class="request-list flex">
+                            <img class="user-pic" src="./images/phil-s.jpg" alt="Phil">
+                            <p class="name">Phil K.</p>
+                            <img class="accept-request" src="./images/icons/accept-circle.png" alt="checkmark">
+                            <img class="deny-request" src="./images/icons/close-circle.png" alt="x-mark">
                         </li>
                     </ul>
                 </div>
-            </div> 
-            <div class="col-2">2/5</div>
+            </div>
+            <div class="container">
+                <div class="connections-nav">
+                    <div class="count-container">
+                        <p>500+</p>
+                    </div>
+                    <h3>Your Connections</h3>
+                </div>
+                <div class="request-container">
+                    <ul class="request-ul">
+                        <li class="request-list flex">
+                            <img class="user-pic" src="./images/adrien-s.jpg" alt="Todd">
+                            <p class="name">Adrien D</p>
+                        </li>
+                        <li class="request-list flex">
+                            <img class="user-pic" src="./images/anne-s.jpg" alt="Phil">
+                            <p class="name">Anne J</p>
+                        </li>
+                        <li class="request-list flex">
+                            <img class="user-pic" src="./images/alayne-s.jpg" alt="Todd">
+                            <p class="name">Alayne T</p>
+                        </li>
+                        <li class="request-list flex">
+                            <img class="user-pic" src="./images/arry-s.jpg" alt="Phil">
+                            <p class="name">Arry Y</p>
+                        </li>
+                    </ul>
+                    <div class="view-more-container flex">
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 </body>
+
 </html>
