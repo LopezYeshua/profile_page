@@ -1,125 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./css_libraries/dojo.css">
+    <link rel="stylesheet" 
+    href="http://127.0.0.1:5500/bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-
 <body>
-    <div class="nav flex">
-        <div class="nav-container flex">
-            <h1>Profile</h1>
-            <ul class="nav-ul">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">my Profile</a></li>
-                <li><a href="#">Find Connections</a></li>
-            </ul>
-            <button class="btn">Sign Out</button>
-        </div>
-    </div>
-    <div class="content-container flex">
-        <div class="row flex">
-            <div class="container">
-                <div class="user-card-nav">
-                    <img id="profilePic" src="./images/icons/user-circle.png" alt="User Photo">
-                </div>
-                <div class="user-card-content">
-                    <h1 class="user-card-name">Jane Doe</h1>
-                    <div class="user-card-location">
-                        <img id="mapMarker" src="./images/icons/map-marker.png" alt="Map Marker">
-                        <h3>Seattle</h3>
-                    </div>
-                    <div class="user-card-description">
-                        <ul class="skills">
-                            <li>Developer</li>
-                            <li>|</li>
-                            <li>Engineer</li>
-                            <li>|</li>
-                            <li>Problem Solver</li>
-                        </ul>
-                        <p>Master of shadows and the Internet!</p>
-                    </div>
-                    <div class="editProfile">
-                        <img id="gear" src="./images/icons/gear.png" alt="a gear">
-                        <a href="" target="_blank">edit profile</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="education-nav">
-                    <h3>Education</h3>
-                </div>
-                <div id="education-information" class="container">
-                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
-                    <h3>Dec 2019 - Mar 2020</h3>
-                    <p>Tripple black belt in Python, MERN, and C#</p>
-                </div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand mb-0 h1">Profile</a>
+            <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                <button type="button" class="btn-sm btn btn-info"
+                style="--bs-btn-padding-y: .25em; --bs-btn-padding-x: .5em; --bs-btn-font-size: .75rem;">Sign Out</button>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Pricing</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="row-2 flex">
-            <div class="container">
-                <div class="request-nav">
-                    <div class="count-container">
-                        <p>2</p>
-                    </div>
-                    <h3 class="h3-request-title">Connection Requests</h3>
-                </div>
-                <div class="container">
-                    <ul class="request-ul">
-                        <li class="request-list flex">
-                            <img class="user-pic" src="./images/todd-s.jpg" alt="Todd">
-                            <p class="name">Todd E.</p>
-                            <img class="accept-request" src="./images/icons/accept-circle.png" alt="checkmark">
-                            <img class="deny-request" src="./images/icons/close-circle.png" alt="x-mark">
-                        </li>
-                        <li class="request-list flex">
-                            <img class="user-pic" src="./images/phil-s.jpg" alt="Phil">
-                            <p class="name">Phil K.</p>
-                            <img class="accept-request" src="./images/icons/accept-circle.png" alt="checkmark">
-                            <img class="deny-request" src="./images/icons/close-circle.png" alt="x-mark">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container">
-                <div class="connections-nav">
-                    <div class="count-container">
-                        <p>500+</p>
-                    </div>
-                    <h3>Your Connections</h3>
-                </div>
-                <div class="request-container">
-                    <ul class="request-ul">
-                        <li class="request-list flex">
-                            <img class="user-pic" src="./images/adrien-s.jpg" alt="Todd">
-                            <p class="name">Adrien D</p>
-                        </li>
-                        <li class="request-list flex">
-                            <img class="user-pic" src="./images/anne-s.jpg" alt="Phil">
-                            <p class="name">Anne J</p>
-                        </li>
-                        <li class="request-list flex">
-                            <img class="user-pic" src="./images/alayne-s.jpg" alt="Todd">
-                            <p class="name">Alayne T</p>
-                        </li>
-                        <li class="request-list flex">
-                            <img class="user-pic" src="./images/arry-s.jpg" alt="Phil">
-                            <p class="name">Arry Y</p>
-                        </li>
-                    </ul>
-                    <div class="view-more-container flex">
-                        <a href="#">View More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    </nav>
+    <script src="http://127.0.0.1:5500//bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
